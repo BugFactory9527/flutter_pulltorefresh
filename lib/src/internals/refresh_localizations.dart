@@ -6,7 +6,6 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 /// Implementation of localized strings for the [ClassicHeader],[ClassicFooter],[TwoLevelHeader]
 ///
@@ -80,6 +79,7 @@ class RefreshLocalizations {
     'sv': SvRefreshString(),
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
+    'el': ElRefreshString(),
   };
 
   RefreshString? get currentLocalization {
@@ -116,7 +116,8 @@ class RefreshLocalizationsDelegate
       'pt',
       'sv',
       'nl',
-      'es'
+      'es',
+      'el',
     ].contains(locale.languageCode);
   }
 
@@ -634,4 +635,40 @@ class KrRefreshString implements RefreshString {
 
   @override
   String? refreshingText = "새로 고침 중…";
+}
+
+/// el_GR Greek
+class ElRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "Απόσπασε για να ξεκινήσεις φόρτωση";
+
+  @override
+  String? canRefreshText = "Απόσπασε για να ξεκινήσεις ανανέωση";
+
+  @override
+  String? canTwoLevelText = "Απόσπασε για να περάσεις στο δεύτερο επίπεδο";
+
+  @override
+  String? idleLoadingText = "Σύρε προς τα πάνω για φόρτωση";
+
+  @override
+  String? idleRefreshText = "Σύρε προς τα κάτω για ανανέωση";
+
+  @override
+  String? loadFailedText = "Απέτυχε η φόρτωση";
+
+  @override
+  String? loadingText = "Φόρτωση…";
+
+  @override
+  String? noMoreText = "Δεν υπάρχουν περισσότερα δεδομένα";
+
+  @override
+  String? refreshCompleteText = "Επιτυχής ανανέωση";
+
+  @override
+  String? refreshFailedText = "Απέτυχε η ανανέωση";
+
+  @override
+  String? refreshingText = "Ανανέωση…";
 }
