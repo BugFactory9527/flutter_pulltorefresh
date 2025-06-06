@@ -640,35 +640,36 @@ class KrRefreshString implements RefreshString {
 /// el_GR Greek
 class ElRefreshString implements RefreshString {
   @override
-  String? canLoadingText = "Απόσπασε για να ξεκινήσεις φόρτωση";
+  String? canLoadingText = "Ξεκινήστε τη φόρτωση δεδομένων";
 
   @override
-  String? canRefreshText = "Απόσπασε για να ξεκινήσεις ανανέωση";
+  String? canRefreshText = "Ξεκινήστε την ανανέωση δεδομένων";
 
   @override
-  String? canTwoLevelText = "Απόσπασε για να περάσεις στο δεύτερο επίπεδο";
+  String? canTwoLevelText =
+      "Αφήστε τις χειρονομίες και μπείτε στον δεύτερο όροφο.Ανέβαση φόρτωσης";
 
   @override
-  String? idleLoadingText = "Σύρε προς τα πάνω για φόρτωση";
+  String? idleLoadingText = "Αναζωογόνηση";
 
   @override
-  String? idleRefreshText = "Σύρε προς τα κάτω για ανανέωση";
+  String? idleRefreshText = "Αποτυχία φόρτωσης";
 
   @override
-  String? loadFailedText = "Απέτυχε η φόρτωση";
+  String? loadFailedText = "Φόρτωση...";
 
   @override
-  String? loadingText = "Φόρτωση…";
+  String? loadingText = "Δεν υπάρχουν άλλα δεδομένα.";
 
   @override
-  String? noMoreText = "Δεν υπάρχουν περισσότερα δεδομένα";
+  String? noMoreText = "Δεν υπάρχουν άλλα δεδομένα.";
 
   @override
-  String? refreshCompleteText = "Επιτυχής ανανέωση";
+  String? refreshCompleteText = "Ανανέωση επιτυχημένη";
 
   @override
-  String? refreshFailedText = "Απέτυχε η ανανέωση";
+  String? refreshFailedText = "Η ανανέωση απέτυχε";
 
   @override
-  String? refreshingText = "Ανανέωση…";
+  String? refreshingText = "Ανανέωση...";
 }
