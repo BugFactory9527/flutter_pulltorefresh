@@ -80,6 +80,7 @@ class RefreshLocalizations {
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
     'el': ElRefreshString(),
+    'pl': PlRefreshString(),
   };
 
   RefreshString? get currentLocalization {
@@ -118,6 +119,7 @@ class RefreshLocalizationsDelegate
       'nl',
       'es',
       'el',
+      'pl',
     ].contains(locale.languageCode);
   }
 
@@ -203,6 +205,42 @@ class ChRefreshString implements RefreshString {
 
   @override
   String? refreshingText = "刷新中…";
+}
+
+/// Polish
+class PlRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "Puszcz, aby rozpocząć ładowanie danych";
+
+  @override
+  String? canRefreshText = "Puszcz, aby odświeżyć dane";
+
+  @override
+  String? canTwoLevelText = "Zwolnij, aby przejść do drugiego poziomu";
+
+  @override
+  String? idleLoadingText = "Przeciągnij w dół, aby załadować więcej";
+
+  @override
+  String? idleRefreshText = "Przeciągnij w dół, aby odświeżyć";
+
+  @override
+  String? loadFailedText = "Błąd ładowania";
+
+  @override
+  String? loadingText = "Ładowanie...";
+
+  @override
+  String? noMoreText = "Brak więcej danych";
+
+  @override
+  String? refreshCompleteText = "Odświeżenie zakończone sukcesem";
+
+  @override
+  String? refreshFailedText = "Odświeżenie nie powiodło się";
+
+  @override
+  String? refreshingText = "Trwa odświeżanie...";
 }
 
 /// English
